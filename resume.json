@@ -1,0 +1,76 @@
+{
+    "basics": {
+        "name": "Zewar Salih",
+        "label": "Fullstack Developer",
+        "image": "",
+        "email": "zewar.salih@gmail.com",
+        "phone": "(+46) 72-8698876",
+        "summary": "As a developer with sales background, I have learned to adapt to various projects and schedules.<br> As a software developer, I work diligently on a number of different programming languages."
+    },
+    "work": [
+        {
+            "name": "Hupfront",
+            "position": "President",
+            "url": "https://hupfront.com",
+            "startDate": "2021-09-01",
+            "endDate": "2023-01-10",
+            "summary": "The Hupfront story began in 2021, with clients like you in mind. My goal: To offer premium software and web development services to Swedish companies. Back to you today: We provide your organisation with access to top software developers and deliver second to-none solutions that improve performance whilst increasing cost-efficiency.",
+            "highlights": [
+                "Started the company"
+            ]
+        }
+    ],
+    "education": [
+        {
+            "institution": "Gymnasium",
+            "url": "https://www.taby.se/ava",
+            "area": "Technology focus Design and product development",
+            "startDate": "August 2006",
+            "endDate": "Jun 2009"
+        }
+    ],
+    "certificates": [
+        {
+            "name": "Fullstack Certificate",
+            "date": "February 2021",
+            "issuer": "Lexicon",
+            "url": "https://www.lexicon.se/"
+        }
+    ],
+    "skills": [
+        {
+            "name": "Fullstack Development",
+            "level": "Master",
+            "keywords": [
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "Java"
+            ]
+        }
+    ],
+    "languages": [
+        {
+            "language": [
+                "English",
+                "Kurdish",
+                "Swedish"
+            ]
+        }
+    ],
+    "interests": [
+        {
+            "name": "Wildlife",
+            "keywords": [
+                "Swimming",
+                "Coding"
+            ]
+        }
+    ],
+    "references": [
+        {
+            "name": "#",
+            "reference": "Reference…"
+        }
+    ]
+}

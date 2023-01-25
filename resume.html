@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+
+<body>
+    <!-- Navbar  Section Start -->
+    <header>
+        <a href="./index.html" class="logo">ZE<span>W</span>AR</a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <ul class="navbar">
+            <div class="bx bx-moon" id="darkmode"></div>
+        </ul>
+    </header>
+    <!-- Navbar Section End -->
+    <!-- Home Section Start -->
+    <section class="home" id="home">
+        <div class="social">
+            <a href="https://github.com/zewarsalih?tab=repositories"><i class='bx bxl-github'></i></a>
+            <a href="https://www.instagram.com/zewar.salih/"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.facebook.com/zewar.salih"><i class='bx bxl-facebook'></i></a>
+        </div>
+        <div class="home-text">
+            <h1 id="app"></h1>
+            <a href="./index.html#contact" class="btn">Download CV</a>
+        </div>
+    </section>
+    <!-- Home Section End -->
+    <!-- Footer Section Start -->
+    <div class="footer">
+        <h2>Follow Me</h2>
+        <div class="footer-social">
+            <a href="https://www.facebook.com/zewar.salih"><i class='bx bxl-facebook'></i></a>
+            <a href="https://www.instagram.com/zewar.salih/"><i class='bx bxl-instagram'></i></a>
+            <a href="https://www.youtube.com/"><i class='bx bxl-youtube'></i></a>
+            <a href="https://github.com/zewarsalih?tab=repositories"><i class='bx bxl-github'></i></a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> © ZEWAR | All Right Reserved.</p>
+    </div>
+    <!-- Footer Section End -->
+    <!-- Javascript -->
+    <script src="script.js"></script>
+    <script>
+
+        fetch('./resume.json')
+        .then(response => response.json())
+        .then(data => {
+            console.log(data.languages[0])
+            document.querySelector('#app').innerHTML = `<div class="home-text"> 
+                <h1>${data.basics.name}</h1>
+                <h2>${data.basics.label}</h2>
+                <h2>${data.basics.email}</h2>
+                <h2>${data.basics.phone}</h2>
+                <p>${data.basics.summary}</p>
+                <div class="container"><p class="lang">Languages: ${data.languages[0].language}</p></div>
+                </div>
+                
+                `
+        })
+        
+    </script>
+</body>
+
+</html>
